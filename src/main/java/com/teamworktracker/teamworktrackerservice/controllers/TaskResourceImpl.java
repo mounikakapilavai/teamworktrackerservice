@@ -15,5 +15,11 @@ public class TaskResourceImpl implements ITaskResource {
 		// TODO Auto-generated method stub
 		return "Hi, Welcome to Team Work Tracker";
 	}
+	
+	@RequestMapping(path = "/test1", method = RequestMethod.GET)
+	public String test1() {
+		// TODO Auto-generated method stub
+		return "Hi, Welcome to Team Work Tracker";
+	}
 
 }
