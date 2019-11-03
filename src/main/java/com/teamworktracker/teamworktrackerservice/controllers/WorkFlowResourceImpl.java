@@ -11,8 +11,11 @@ import com.teamworktracker.teamworktrackerservice.apispec.IWorkFlowResource;
 import com.teamworktracker.teamworktrackerservice.model.WorkFlowRequest;
 import com.teamworktracker.teamworktrackerservice.services.WorkFlowService;
 
+import io.swagger.annotations.Api;
+
 @RestController
-@RequestMapping(path = "/task")
+@RequestMapping(path = "/api/task")
+@Api(value="Team Work Tracker", description="Operations pertaining to Work Flow")
 public class WorkFlowResourceImpl implements IWorkFlowResource {
 	
 	@Autowired
